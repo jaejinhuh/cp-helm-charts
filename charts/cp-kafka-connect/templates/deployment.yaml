@@ -112,6 +112,7 @@ spec:
               echo "Launching Kafka Connect worker"
               cd /etc/kafka-connect/jars
               wget https://downloads.mysql.com/archives/get/p/3/file/mysql-connector-java-5.1.48.tar.gz
+              wget https://download.oracle.com/otn-pub/otn_software/jdbc/1913/ojdbc8.jar
               tar -xvf mysql-connector-java-5.1.48.tar.gz
               mv mysql-connector-java-5.1.48/mysql-connector-java-5.1.48.jar .
               /etc/confluent/docker/run &
