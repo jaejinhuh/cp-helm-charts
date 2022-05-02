@@ -109,10 +109,12 @@ spec:
               echo "Installing Connector"
               confluent-hub install --no-prompt confluentinc/kafka-connect-jdbc:latest
               confluent-hub install --no-prompt debezium/debezium-connector-mysql:latest
+              confluent-hub install --no-prompt debezium/debezium-connector-mongodb:latest
               echo "Launching Kafka Connect worker"
               cd /etc/kafka-connect/jars
               wget https://downloads.mysql.com/archives/get/p/3/file/mysql-connector-java-5.1.48.tar.gz
               wget https://download.oracle.com/otn-pub/otn_software/jdbc/1913/ojdbc8.jar
+              wget https://github.com/aws/amazon-documentdb-jdbc-driver/releases/download/v1.2.2/documentdb-jdbc-1.2.2-all.jar
               tar -xvf mysql-connector-java-5.1.48.tar.gz
               mv mysql-connector-java-5.1.48/mysql-connector-java-5.1.48.jar .
               /etc/confluent/docker/run &
