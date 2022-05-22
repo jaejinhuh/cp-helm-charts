@@ -115,6 +115,7 @@ spec:
               wget https://downloads.mysql.com/archives/get/p/3/file/mysql-connector-java-5.1.48.tar.gz
               wget https://download.oracle.com/otn-pub/otn_software/jdbc/1913/ojdbc8.jar
               wget https://github.com/aws/amazon-documentdb-jdbc-driver/releases/download/v1.2.2/documentdb-jdbc-1.2.2-all.jar
+              wget https://s3.amazonaws.com/redshift-downloads/drivers/jdbc/2.1.0.7/redshift-jdbc42-2.1.0.7.jar
               tar -xvf mysql-connector-java-5.1.48.tar.gz
               mv mysql-connector-java-5.1.48/mysql-connector-java-5.1.48.jar .
               /etc/confluent/docker/run &
