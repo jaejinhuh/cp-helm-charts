@@ -111,6 +111,7 @@ spec:
               confluent-hub install --no-prompt debezium/debezium-connector-mysql:latest
               confluent-hub install --no-prompt debezium/debezium-connector-mongodb:latest
               confluent-hub install --no-prompt debezium/debezium-connector-sqlserver:latest
+              confluent-hub install --no-prompt wepay/kafka-connect-bigquery:latest
               echo "Launching Kafka Connect worker"
               cd /etc/kafka-connect/jars
               wget https://downloads.mysql.com/archives/get/p/3/file/mysql-connector-java-5.1.48.tar.gz
